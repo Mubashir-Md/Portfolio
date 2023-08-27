@@ -132,12 +132,13 @@ div.matter {
     margin: 1%;
     border-radius: 10px;
     border: 2px whitesmoke solid;
+    padding: 5%;
 }
 
 div.matter img {
     width: 100%;
     height: 50%;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 div.matter h2 {
