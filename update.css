@@ -15,347 +15,166 @@
 
 
 div.whole {
-    background-color: #004643;
-}
-
-/* Main */
-div.main {
-    position: relative;
-    height: 100vh;
-    color: #fffffe;
-   
-
-}
-
-div.myself p span.italicColor {
-    font-style: italic;
-    /* color: yellow; */
-
-
-}
-
-div.first {
-
-    text-align: center;
+    background-color: #d8eefe;
 }
 
 /* Header */
 div.main header {
-
+    padding: 4%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
-    margin: 0 auto;
-    width: 80%;
+    /* margin: 0 auto; */
+    /* width: 80%; */
     height: 100%;
     font-family: 'Roboto', sans-serif;
 }
 
 header img.mine {
-    height: 25vmax;
+    height: 10em;
+    width: 9em;
     border-radius: 50%;
     justify-content: flex-start;
-    align-items: center;
-    margin: auto 4%;
-
+    align-items: start;
+    /* margin: 4% 0 2% 4%; */
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
 header div.first {
-    /* color: white; */
-    margin: auto auto;
-    padding: 2% 2%;
-    justify-content: flex-end;
-    align-items: center;
+    height: 100%;
+    /* width: 50%; */
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
     font-family: 'Roboto', sans-serif;
 }
 
-div.first p {
+div.first p.big {
 
-    margin: 1% auto;
-    padding: 2%;
-    font-size: 2.7vmax;
-    /* color: azure; */
+    /* margin: 1% auto; */
+    /* padding: 2%; */
+    font-size: 3rem;
+    color: #094067;
+    font-weight: bold;
 }
 
-/* Navbar */
-nav.navbar{
-    display: flex;
-    justify-content: space-between;
-    width: 50%;
-    margin: 0 auto;
-    padding: 1%;
-    
-}
-nav a.links{
-    color: #CAF0F8;
-    text-decoration: underline;
-}
-
-/* goto top */
-div.main span.topper {
-    display: inline-block;
-    position: fixed;
-    z-index: 1;
-    left: 97%;
-    /* background-color: rgb(9, 52, 107); */
-    border-radius: 50%;
-}
-
-div.main span.topper a {
-    display: inline-block;
-}
-
-div.main span.topper a i {
-    display: inline-block;
-    font-size: 30px;
-    color: whitesmoke;
+div.first p.small {
+    width: 70%;
+    font-size: 1.3rem;
+    color: #094067;
 }
 
 div.social0 {
-    width: 50%;
-    margin: 1% auto;
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    /* margin: 1% auto; */
 }
 
 div.social0 span.icons {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
 
 }
 
 div.social0 span.icons i {
-    font-size: 4vmax;
-    /* color: azure; */
-    /* color: rgb(202, 240, 248); */
-    color: #fffffe;
-    
-
-}
-div.social0 span.icons i:hover {
-    color: #f9bc60;
-
-}
-
-/* About section */
-div.about {
-    background-color: #abd1c6;
-    color: #101727;
-    text-align: center;
-    margin: 1% auto;
-    padding: 2%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-
-div.about h1 {
-    color: #001e1d;
-    text-decoration: underline;
-    text-align: center;
+    font-size: 3rem;
+    color: #094067;
     margin: 1%;
-    padding: 3%;
-    font-weight: bold;
-    font-size: 5vmax;
-}
-
-div.about div.myself p {
-    font-size: 1.2rem;
-    text-align: left;
-    width: 50%;
-    line-height: 1.8;
-    padding: 3%;
-    border-radius: 5%;
-    margin: 2% auto;
-    color: #0f3433;
 
 }
 
-div.about div.myself {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-}
-
-div.myself img {
-    width: 40%;
-    height: 40%;
-    margin: 2%;
-    padding: 2%;
-    border-radius: 50px;
-}
-
-div.about a.res{
-    margin: 4% auto;
-    padding: 15px 20px;
-    background-color: #f9bc60;
-    color: #001e1d;
+div.social0 a.res {
+    font-size: 1rem;
+    color: #ef4565;
     font-weight: bolder;
     border-radius: 10px;
     text-decoration: none;
-    width: 20%;
+    margin: 5% 0;
 }
 
 
-div.about button {
-    padding: 10px 5px;
-    background-color: rgb(0, 180, 216);
-    color: #f9bc60;
-    border-radius: 15%;
-    margin: 2%;
-    
-}
-
-/* TechStacks */
-
-h2.heads {
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
-    font-size: 2.5vmax;
-    margin: 1%;
-    padding: 2%;
-    text-decoration: underline;
-    color: #fffffe;
-   
-}
-
-div.about div.techs {
-    
-    
-}
-
-div.about div.techs img {
-    height: 7vmax;
-    width: 7vmax;
-    border-radius: 50%;
-}
 
 
 
 /* Projects section */
 
 div.projects {
-    background-color: #004643;
+    background-color: #d8eefe;
 
 }
 
-div.projects h1 {
+/* div.projects h1 {
     text-align: center;
     font-family: 'Roboto', sans-serif;
     margin: 2%;
-    color: #fffffe;
-    font-size: 5vmax;
-}
+    color: #094067;
+    font-size: vmax;
+} */
 
 div.projects div.collection {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     color: #CAF0F8;
     margin: 1%;
     padding: 1%;
 }
 
-div.matter{
-    background-color: #e8e4e6;
-    /* height: 60vh; */
-    width: 20%;
+div.matter {
+    background-color: #fffffe;
+    /* height: ; */
+    width: 30%;
     margin: 1%;
-    border-radius: 20px;
+    border-radius: 10px;
     border: 2px whitesmoke solid;
 }
-div.matter img{
+
+div.matter img {
     width: 100%;
     height: 50%;
-    border-radius: 20px;
-}
-div.matter h2{
-    color: #001e1d;
-    margin: 10px;
-    
-}
-div.matter p{
-    line-height: 1.5;
-    font-size: 1.1rem;
-    color: #0f3433;
-    margin: 10px;
-}
-div.matter a{
-    color: #fffffe;
-    background-color: #004643;
-    padding: 5px 10px;
-    margin: 10px;
-    text-decoration: none;
     border-radius: 10px;
 }
 
-/* contacts section */
-div.contacts {
-    background-color: #abd1c6;
-    text-align: center;
-    /* margin: 2%; */
-    padding: 2%;
-}
-div.contacts h1{
-    color: #001e1d;
-    margin: 1%;
-    font-size: 3.5rem;
-}
-div.contacts h3{
-    color: #001e1d;
-    margin: 1%;
-    padding: 1%;
+div.matter h2 {
+    color: #094067;
+    margin: 10px;
     font-size: 1.5rem;
 }
-div.socials form {
-    margin: 1% auto;
-    padding: 20px;
-    width: 50%;
-    border-radius: 15px;
-    background-color: #004643;
+
+div.matter p {
+    /* line-height: 1.5; */
+    font-size: 1rem;
+    color: #5f6c7b;
+    margin: 10px;
 }
 
-div.socials form label {
+div.matter a {
     color: #fffffe;
-    margin: 1%;
-    padding: 1%;
-    /* font-weight: bold; */
-    /* font-size: 18px; */
-}
-
-div.socials form input {
-    padding: 15px;
-    width: 80%;
-    margin-bottom: 20px;
-    margin-top: 7px;
-    border-radius: 5px;
-}
-div.socials form textarea {
-    padding: 10px;
-    
-    width: 80%;
-    margin-bottom: 20px;
-    margin-top: 7px;
-    border-radius: 5px;
-}
-
-div.socials form input.button {
-    width: 20%;
-    /* position: absolute; */
-    background-color: #f9bc60;
-    font-size: 18px;
-    color: #001e1d;
-}
-footer{
-    text-align: center;
-    padding: 1%;
-    font-size: 1.5rem;
-    color: #fffffe;
-}
-footer a{
+    background-color: #ef4565;
+    padding: 5px 10px;
+    margin: 10px;
     text-decoration: none;
-    color: #f9bc60;
+    border-radius: 5px;
+}
+
+
+
+/* made with love */
+
+
+footer.last {
+    text-align: center;
+    padding: 1%;
+    font-size: 1.2rem;
+    color: #094067;
+}
+
+footer.last a {
+    text-decoration: none;
+    color: #ef4565;
 }

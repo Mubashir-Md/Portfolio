@@ -4,84 +4,35 @@
         padding: 0;
         box-sizing: border-box;
     }
-
-    
-
-    div.main header {
-        display: block;
-    }
-
-    div.main header img.mine {
-        display: block;
-        width: 50%;
-        height: 50%;
-        margin: 1% auto;
-    }
-
-    header div.first {
-        display: block;
-        width: 100%;
-    }
-
-    div.about {
-        /* display: block; */
-    }
-
-    div.about a {
-        padding: 3%;
-        margin: 2%;
-        /* background-color: yellow; */
-    }
-
-    div.about div.myself {
-        width: 100%;
-        display: block;
-    }
-
-    div.myself img {
-        width: 100%;
-        height: 50%;
-        margin: 2%;
-        padding: 2%;
-        border-radius: 50px;
-    }
-
-    div.about div.myself p {
-        line-height: 2rem;
-        width: 100%;
-        text-align: center;
-        /* margin: 2%; */
-    }
-
-    div.projects div.collection {
-        display: block;
-        color: #CAF0F8;
-        margin: 5%;
-        padding: 2%;
-        
-    }
-    div.about a.res{
+    div.first p.small {
         width: 90%;
+        font-size: 1.3rem;
+        color: #094067;
     }
-
-    div.about div.myself{
+    div.social0 {
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
+        width: 70%;
+        /* margin: 1% auto; */
+    }
+    div.social0 span.icons i {
+        font-size: 2rem;
+        
+        color: #094067;
+    
+    
     }
 
     div.projects div.collection div.matter {
         width: 90%;
-        height: 100%;
         margin: 5%;
     }
 
-    div.matter p {
-        line-height: 25px;
-        font-size: 18px;
-    }
-    div.matter a{
-        margin: 5%;
-        
+    footer.last {
+        text-align: center;
+        padding: 1%;
+        font-size: 1rem;
+        color: #094067;
     }
 }
 
