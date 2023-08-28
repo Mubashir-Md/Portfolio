@@ -1,0 +1,193 @@
+/* @font-face {
+    font-family: 'Comic Neue', cursive;
+    src: url(ComicNeue-Regular.ttf);
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+  /* background-color: rgb(13, 13, 92); */
+
+}
+
+/* theme button */
+#change{
+  /* width: 50%; */
+  border: none;
+  margin: 1%;
+  cursor: pointer;
+  font-size: 1.7rem;
+  color: #d8eefe;
+}
+
+div.whole {
+  background-color: #094067;
+}
+
+/* Header */
+div.main header {
+  padding: 4%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* margin: 0 auto; */
+  /* width: 80%; */
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+}
+
+header img.mine {
+  height: 10em;
+  width: 9em;
+  border-radius: 50%;
+  justify-content: flex-start;
+  align-items: start;
+  /* margin: 4% 0 2% 4%; */
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+header div.first {
+  height: 100%;
+  /* width: 50%; */
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: start;
+  font-family: 'Roboto', sans-serif;
+}
+
+div.first p.big {
+
+  /* margin: 1% auto; */
+  /* padding: 2%; */
+  font-size: 3rem;
+  color: #d8eefe;
+  font-weight: bold;
+}
+
+div.first p.small {
+  width: 70%;
+  font-size: 1.3rem;
+  color: #d8eefe;
+}
+
+div.social0 {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  /* margin: 1% auto; */
+}
+
+div.social0 span.icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
+div.social0 span.icons i {
+  font-size: 2.5rem;
+  color: #d8eefe;
+  margin: 1%;
+
+
+}
+
+div.social0 a.res {
+  font-size: 1rem;
+  color: #ef4565;
+  font-weight: bolder;
+  border-radius: 10px;
+  text-decoration: none;
+  margin: 5% 0;
+}
+
+
+
+
+
+/* Projects section */
+
+div.projects {
+  background-color: #094067;
+
+}
+
+/* div.projects h1 {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  margin: 2%;
+  color: #094067;
+  font-size: vmax;
+} */
+
+div.projects div.collection {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  color: #CAF0F8;
+  /* margin: 1%; */
+  /* padding: 10px; */
+}
+
+div.matter {
+  background-color: #9bd5ff;
+  /* background-color: #fffffe; */
+  /* height: ; */
+  width: 30%;
+  margin: 1%;
+  border-radius: 10px;
+  padding: 5%;
+}
+
+div.matter img {
+  width: 100%;
+  height: 50%;
+  border-radius: 5px;
+}
+
+div.matter h2 {
+  color: #094067;
+  margin: 10px;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+div.matter p {
+  /* line-height: 1.5; */
+  font-size: 1rem;
+  color: #094067;
+  margin: 10px;
+}
+
+div.matter a {
+  color: #fffffe;
+  background-color: #ef4565;
+  padding: 10px 15px;
+  margin: 10px;
+  text-decoration: none;
+  border-radius: 7px;
+}
+
+
+
+/* made with love */
+
+
+footer.last {
+  text-align: center;
+  padding: 1%;
+  font-size: 1.2rem;
+  color: #d8eefe;
+}
+
+footer.last a {
+  text-decoration: none;
+  color: #ef4565;
+}
+
