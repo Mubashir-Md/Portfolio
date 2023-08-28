@@ -121,8 +121,7 @@
     <script>
         const btn = document.getElementById('change');
         const theme = document.getElementById('theme');
-        localStorage.setItem("theme", 0);
-        const val = parseInt(localStorage.getItem('theme'));
+        const val = parseInt(localStorage.getItem('theme')) || 0;
         if (val === 0) {
             theme.href = "index.css";
             btn.className = "fa-solid fa-moon";
