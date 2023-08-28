@@ -31,14 +31,14 @@
 
             <header>
                 <img src="images/profile.jpg" alt="MubashirAhmed" class="mine">
-                <i class="fa-solid fa-moon" id="change"></i>
-                <!-- <i class="fa-regular fa-sun" id="change"></i> -->
                 <div class="first" id="up">
-                    <p class="big">Hey I'm Mubashir </p>
-                    <p class="small">I'm a frontend developer, learning Full stack development, I'm an IT undergrad who
-                        is passionate about coding and
-                        devloping software solutions that help to make the world a better place to live.
+                    <p class="big">Hey I'm Mubashir <i class="fa-solid fa-moon" id="change"></i></p>
+                    <p class="small">
+                        I am an enthusiastic full-stack web development enthusiast and an IT undergrad with a passion
+                        for coding and crafting software solutions that contribute to making the world a better place to
+                        live.
                     </p>
+
                     <div class="social0">
                         <span class="icons">
                             <a href="https://www.linkedin.com/in/mubashir061" target="_blank"><i
@@ -48,11 +48,19 @@
                             <a href="https://hashnode.com/@Mubashir61" target="_blank"><i
                                     class="fa-brands fa-hashnode"></i></a>
                             <a href="https://www.instagram.com/mub_135" target="_blank"><i
-                                    class="fa-brands fa-instagram"></i></a>
+                                    class="fa-solid fa-brands fa-instagram"></i></a>
                         </span>
-                        <a class="res" href="ResumeFinal.pdf" target="_blank">DOWNLOAD RESUME <i
-                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
+                    <div class="skillset">
+                        <div class="skills"> JavaScript</div>
+                        <div class="skills"> React</div>
+                        <div class="skills"> ASP.NET</div>
+                        <div class="skills"> Flask</div>
+                        <div class="skills">SQL server</div>
+                    </div>
+                    <a class="res" href="ResumeFinal.pdf" target="_blank">DOWNLOAD RESUME <i
+                            class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
                 </div>
             </header>
         </div>
@@ -109,18 +117,30 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-    
+
     <script>
-        const btn = document.getElementById('change')
-        const theme = document.getElementById('theme')
-        btn.addEventListener("click", ()=>{
-            if(theme.getAttribute("href")==='index.css' && btn.className == 'fa-solid fa-moon'){
+        const btn = document.getElementById('change');
+        const theme = document.getElementById('theme');
+        localStorage.setItem("theme", 0);
+        const val = parseInt(localStorage.getItem('theme'));
+        if (val === 0) {
+            theme.href = "index.css";
+            btn.className = "fa-solid fa-moon";
+        }
+        if (val === 1) {
+            theme.href = "darkMode.css";
+            btn.className = "fa-solid fa-sun";
+        }
+        btn.addEventListener("click", () => {
+            if (theme.getAttribute("href") === 'index.css' && btn.className == 'fa-solid fa-moon' && val === 0) {
                 theme.href = "darkMode.css"
                 btn.className = "fa-solid fa-sun";
+                localStorage.setItem("theme", 1);
             }
-            else{
+            else {
                 theme.href = "index.css";
                 btn.className = "fa-solid fa-moon";
+                localStorage.setItem("theme", 0);
             }
 
         })
