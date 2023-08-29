@@ -23,7 +23,9 @@ i#change {
 }
 
 div.whole {
-  background-color: #094067;
+  /* background-color: #094067; */
+  background-color: #003357;
+  /* background-color: #002946; */
 }
 
 /* Header */
@@ -37,7 +39,7 @@ div.main header {
 }
 
 header img.mine {
-  height: 10em;
+  height: 9em;
   width: 9em;
   border-radius: 50%;
   justify-content: flex-start;
@@ -135,7 +137,8 @@ a.res:hover {
 /* Projects section */
 
 div.projects {
-  background-color: #094067;
+  /* background-color: #094067; */
+  background-color: #003357;
 
 }
 
@@ -158,7 +161,7 @@ div.projects div.collection {
 }
 
 div.matter {
-  background-color: #9bd5ff;
+  background-color: #95d2fe;
   /* background-color: #fffffe; */
   border: #d8eefe solid 2px;
   width: 30%;
