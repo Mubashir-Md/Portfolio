@@ -1,152 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mubashir Ahmed | Portfolio</title>
+        <link rel="icon" href="images/profile.jpg">
+        <!-- Modern sans-serif font -->
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/96aa71b79c.js" crossorigin="anonymous"></script>
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap');
-    </style>
-    <script src="https://kit.fontawesome.com/96aa71b79c.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="index.css" id="theme">
-    <link rel="stylesheet" href="responsive.css">
-
-    <link rel="icon" href="images/profile.jpg">
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-
-    <script src="update.js" defer></script>
-
-
-    <!-- <meta name="color-scheme" content="dark">  -->
-    <title>Portfolio</title>
-</head>
-
-<body>
-    <div class="whole">
-        <div class="main" id="mub">
-
-            <header>
-                <img src="images/profile.jpg" alt="MubashirAhmed" class="mine">
-                <div class="first" id="up">
-                    <p class="big">Hey I'm Mubashir <i class="fa-solid fa-moon" id="change"></i></p>
-                    <p class="small">
-                        I am a full-stack web development enthusiast and an IT undergrad with a passion
-                        for coding and crafting software solutions that contribute to making the world a better place to
-                        live.
-                    </p>
-
-                    <div class="social0">
-                        <span class="icons">
-                            <a href="https://www.linkedin.com/in/mubashir061" target="_blank"><i
-                                    class="fa fa-linkedin"></i></a>
-                            <a href="https://twitter.com/Mubashir_061" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-                            <a href="https://github.com/Mubashir-Md" target="_blank"><i class="fa fa-github"></i></a>
-                            <a href="https://hashnode.com/@Mubashir61" target="_blank"><i
-                                    class="fa-brands fa-hashnode"></i></a>
-                            <a href="https://www.instagram.com/mub_135" target="_blank"><i
-                                    class="fa-solid fa-brands fa-instagram"></i></a>
-                        </span>
-                    </div>
-                    <div class="skillset">
-                        <div class="skills"> JavaScript</div>
-                        <div class="skills"> React</div>
-                        <div class="skills"> ASP.NET</div>
-                        <div class="skills"> Flask</div>
-                        <div class="skills">SQL server</div>
-                    </div>
-                    <a class="res" href="ResumeFinal.pdf" target="_blank">DOWNLOAD RESUME <i
-                            class="fa-solid fa-arrow-up-right-from-square"></i>
-                    </a>
-                </div>
-            </header>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="profile">
+          <img src="images/profile.jpg" alt="Profile" class="profile-image" />
+          <div class="theme-toggle">
+            <button id="theme-toggle" aria-label="Toggle theme">
+              <i class="fa-solid fa-moon" id="theme-icon"></i>
+            </button>
+          </div>
         </div>
 
+        <div class="intro">
+          <h1>Hey I'm Mubashir</h1>
+          <p class="bio">
+            I am a full-stack web development enthusiast and an IT undergrad
+            with a passion for coding and crafting software solutions that
+            contribute to making the world a better place to live.
+          </p>
 
-        <div class="projects" id="mid">
-            <!-- <h1>Projects</h1> -->
-            <div class="collection">
+          <div class="social-links">
+            <a
+              href="https://www.linkedin.com/in/mubashir061"
+              target="_blank"
+              aria-label="LinkedIn"
+              ><i class="fa fa-linkedin"></i
+            ></a>
+            <a
+              href="https://twitter.com/Mubashir_061"
+              target="_blank"
+              aria-label="Twitter"
+              ><i class="fa-brands fa-x-twitter"></i
+            ></a>
+            <a
+              href="https://github.com/Mubashir-Md"
+              target="_blank"
+              aria-label="GitHub"
+              ><i class="fa fa-github"></i
+            ></a>
+            <a
+              href="https://hashnode.com/@Mubashir61"
+              target="_blank"
+              aria-label="Hashnode"
+              ><i class="fa-brands fa-hashnode"></i
+            ></a>
+          </div>
 
-                <div class="matter">
-                    <img src="images/CC.png" alt="">
-                    <h2>Cypher's Critique</h2>
-                    <p>A student feedback form for my institution, replacing paper feedback forms.</p>
-                    <a href="https://cyphers-critique.onrender.com/" target="_blank">Visit <i
-                            class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-                <div class="matter">
-                    <img src="images/Prioritize Future.png" alt="">
-                    <h2>Prioritize Future</h2>
-                    <p>Prioritize Your Tasks with Us using our interface built on top of Eisenhower matrix</p>
-                    <a href="https://prioritizefuture.com" target="_blank">Visit <i
-                            class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-                <div class="matter">
-                    <img src="images/Eid Mubarak.png" alt="">
-                    <h2>Eid Mubarak App</h2>
-                    <p>A customizable and easy to share Eid wish card</p>
-                    <a href="https://eid-mubarak.onrender.com/" target="_blank">Visit <i
-                            class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
+          <div class="skills">
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">React</span>
+            <span class="skill-tag">ASP.NET</span>
+            <span class="skill-tag">Flask</span>
+            <span class="skill-tag">SQL Server</span>
+          </div>
+
+          <a href="ResumeFinal.pdf" class="cta-button" target="_blank">
+            Download Resume
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+        </div>
+      </header>
+
+      <section class="projects">
+        <div class="project-grid">
+          <article class="project-card">
+            <div class="project-image">
+              <img src="images/CC.png" alt="Cypher's Critique" />
             </div>
+            <div class="project-content">
+              <h2>Cypher's Critique</h2>
+              <p>
+                A student feedback form for my institution, replacing paper
+                feedback forms.
+              </p>
+              <a
+                href="https://cyphers-critique.onrender.com/"
+                class="project-link"
+                target="_blank"
+              >
+                Visit <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-image">
+              <img src="images/pf.jpeg" alt="Prioritize Future" />
+            </div>
+            <div class="project-content">
+              <h2>Prioritize Future</h2>
+              <p>
+                Prioritize Your Tasks with Us using our interface built on top
+                of Eisenhower matrix
+              </p>
+              <a
+                href="https://prioritizefuture.netlify.app/"
+                class="project-link"
+                target="_blank"
+              >
+                Visit <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-image">
+              <img src="images/Eid Mubarak.png" alt="Eid Mubarak App" />
+            </div>
+            <div class="project-content">
+              <h2>Eid Mubarak App</h2>
+              <p>A customizable and easy to share Eid wish card</p>
+              <a
+                href="https://eid-mubarak.onrender.com/"
+                class="project-link"
+                target="_blank"
+              >
+                Visit <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </article>
         </div>
+      </section>
 
-        <footer class="last">
-            Made with <span>❤️</span> by <a href="https://twitter.com/Mubashir_061" target="_blank">Mubashir</a>
-            <!-- buy me a coffee widget -->
-
-            <script data-name="BMC-Widget" data-cfasync="false"
-                src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="mubashir061"
-                data-description="Support me on Buy me a coffee!" data-message="Hey there!" data-color="#ef4565"
-                data-position="Right" data-x_margin="18" data-y_margin="18">
-                </script>
-        </footer>
-
+      <footer class="footer">
+        <p>
+          Made with <span class="heart">❤️</span> by
+          <a href="https://twitter.com/Mubashir_061">Mubashir</a>
+        </p>
+      </footer>
     </div>
-
-    </div>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
 
     <script>
-        const btn = document.getElementById('change');
-        const theme = document.getElementById('theme');
-        const val = parseInt(localStorage.getItem('theme')) || 0;
-        if (val === 0) {
-            theme.href = "index.css";
-            btn.className = "fa-solid fa-moon";
-        }
-        if (val === 1) {
-            theme.href = "darkMode.css";
-            btn.className = "fa-solid fa-sun";
-        }
-        btn.addEventListener("click", () => {
-            if (theme.getAttribute("href") === 'index.css' && btn.className == 'fa-solid fa-moon' && val === 0) {
-                theme.href = "darkMode.css"
-                btn.className = "fa-solid fa-sun";
-                localStorage.setItem("theme", 1);
-            }
-            else {
-                theme.href = "index.css";
-                btn.className = "fa-solid fa-moon";
-                localStorage.setItem("theme", 0);
-            }
+        // Theme toggle functionality
+        const themeToggle = document.getElementById('theme-toggle');
+        const themeIcon = document.getElementById('theme-icon');
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+        
+        // Check for saved theme preference or use system preference
+        const savedTheme = localStorage.getItem('theme') || (prefersDark.matches ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', savedTheme);
+        updateIcon(savedTheme);
 
-        })
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = document.documentElement.getAttribute('data-theme');
+            const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+            
+            document.documentElement.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            updateIcon(newTheme);
+        });
+
+        function updateIcon(theme) {
+            themeIcon.className = theme === 'light' ? 'fa-solid fa-moon' : 'fa-solid fa-sun';
+        }
     </script>
-
-</body>
-
+  </body>
 </html>
