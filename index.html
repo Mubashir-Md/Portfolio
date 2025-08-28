@@ -1,15 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Mubashir Ahmed | Portfolio</title>
-        <link rel="icon" href="images/profile.jpg">
-        <!-- Modern sans-serif font -->
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="style.css">
-        <script src="https://kit.fontawesome.com/96aa71b79c.js" crossorigin="anonymous"></script>
-    </head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mubashir Ahmed | Portfolio</title>
+    <link rel="icon" href="images/profile.jpg" />
+    <!-- Modern sans-serif font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/96aa71b79c.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
   <body>
     <div class="container">
@@ -26,9 +32,9 @@
         <div class="intro">
           <h1>Hey I'm Mubashir</h1>
           <p class="bio">
-            I am a full-stack web development enthusiast and an IT undergrad
-            with a passion for coding and crafting software solutions that
-            contribute to making the world a better place to live.
+            I am a full-stack web developer and an IT undergrad with a passion
+            for coding and crafting software solutions that contribute to making
+            the world a better place to live.
           </p>
 
           <div class="social-links">
@@ -78,15 +84,13 @@
         <div class="project-grid">
           <article class="project-card">
             <div class="project-image">
-              <img src="images/quizzyVerse.png" alt="Quizzy Verse" />
+              <img src="images/quizzify.png" alt="Quizzify" />
             </div>
             <div class="project-content">
-              <h2>Quizzy Verse</h2>
-              <p>
-                An AI powered quiz generator webapp built using Flask and Python.
-              </p>
+              <h2>Quizzify</h2>
+              <p>A place to create and conduct quizzes instantly using AI</p>
               <a
-                href="https://quizzy-verse.vercel.app/"
+                href="https://quizzify-web.netlify.app/"
                 class="project-link"
                 target="_blank"
               >
@@ -95,6 +99,22 @@
             </div>
           </article>
 
+          <article class="project-card">
+            <div class="project-image">
+              <img src="images/clipgen.png" alt="clip gen app" />
+            </div>
+            <div class="project-content">
+              <h2>Clip Gen</h2>
+              <p>Create Beautiful Clips with Subtitles & Translations</p>
+              <a
+                href="https://https://clip-gen.vercel.app/"
+                class="project-link"
+                target="_blank"
+              >
+                Visit <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </article>
           <article class="project-card">
             <div class="project-image">
               <img src="images/pf.jpeg" alt="Prioritize Future" />
@@ -143,28 +163,32 @@
     </div>
 
     <script>
-        // Theme toggle functionality
-        const themeToggle = document.getElementById('theme-toggle');
-        const themeIcon = document.getElementById('theme-icon');
-        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
-        
-        // Check for saved theme preference or use system preference
-        const savedTheme = localStorage.getItem('theme') || (prefersDark.matches ? 'dark' : 'light');
-        document.documentElement.setAttribute('data-theme', savedTheme);
-        updateIcon(savedTheme);
+      // Theme toggle functionality
+      const themeToggle = document.getElementById("theme-toggle");
+      const themeIcon = document.getElementById("theme-icon");
+      const prefersDark = window.matchMedia("(prefers-color-scheme: dark)");
 
-        themeToggle.addEventListener('click', () => {
-            const currentTheme = document.documentElement.getAttribute('data-theme');
-            const newTheme = currentTheme === 'light' ? 'dark' : 'light';
-            
-            document.documentElement.setAttribute('data-theme', newTheme);
-            localStorage.setItem('theme', newTheme);
-            updateIcon(newTheme);
-        });
+      // Check for saved theme preference or use system preference
+      const savedTheme =
+        localStorage.getItem("theme") ||
+        (prefersDark.matches ? "dark" : "light");
+      document.documentElement.setAttribute("data-theme", savedTheme);
+      updateIcon(savedTheme);
 
-        function updateIcon(theme) {
-            themeIcon.className = theme === 'light' ? 'fa-solid fa-moon' : 'fa-solid fa-sun';
-        }
+      themeToggle.addEventListener("click", () => {
+        const currentTheme =
+          document.documentElement.getAttribute("data-theme");
+        const newTheme = currentTheme === "light" ? "dark" : "light";
+
+        document.documentElement.setAttribute("data-theme", newTheme);
+        localStorage.setItem("theme", newTheme);
+        updateIcon(newTheme);
+      });
+
+      function updateIcon(theme) {
+        themeIcon.className =
+          theme === "light" ? "fa-solid fa-moon" : "fa-solid fa-sun";
+      }
     </script>
   </body>
 </html>
